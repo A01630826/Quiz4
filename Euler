@@ -1,0 +1,12 @@
+import math
+
+def euler_calc(pre):
+    b=0
+    for i in range (pre+1):
+        a= (1/math.factorial(i))+b
+        print(a)
+        b=a
+    return b
+
+n=int(input("precision?"))
+print (euler_calc(n))
